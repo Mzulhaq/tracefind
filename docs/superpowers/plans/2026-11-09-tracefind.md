@@ -51,4 +51,4 @@ Own `data/corpus.json`, `data/queries.json`, `data/README.md`, `docs/interview-g
 - [x] Run loopback HTTP demo, fixed evaluation and failure analysis; write actual results and README.
 - [x] Verify suite/lint/build/clean install and add CI/container checks.
 - [x] Independent review, material fixes and regression tests.
-- [ ] Scan publication files, verify GitHub identity, create/push once, verify CI and update ledger.
+- [x] Scan publication files, verify GitHub identity, create/push once, verify all four source CI jobs and prepare the final ledger update.

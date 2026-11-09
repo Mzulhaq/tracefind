@@ -2,6 +2,8 @@
 
 TraceFind searches a small support handbook and measures how well its results match fixed relevance judgments. It pairs a read-only FastAPI service with atomic SQLite corpus replacement, an explainable BM25 ranker, a term-overlap baseline, and an offline evaluation that exposes failures.
 
+[CI results](https://github.com/Mzulhaq/tracefind/actions/workflows/ci.yml) · [Measured evaluation](docs/evaluation.md) · [Interview guide](docs/interview-guide.md)
+
 It runs locally without API keys, model downloads, or paid services. This is real lexical retrieval, a component of document search and RAG systems. It does not use embeddings or an LLM and does not generate answers.
 
 ## Run it
