@@ -1,0 +1,2391 @@
+{
+  "answerable_count": 20,
+  "case_count": 24,
+  "cases_sha256": "b36e32705f4fcf73be6981133537cec6e0300422ee70cc797d6c0878c9fbb35a",
+  "corpus_sha256": "8e113de9191ea4bb9dc427da705d8cbdad37f8a2fb496b3770bcbe4692f1cd8b",
+  "k": 3,
+  "methods": {
+    "bm25": {
+      "empty_result_rate": 0.0,
+      "false_positive_count": 4,
+      "macro_recall_at_k": 0.675,
+      "mrr_at_k": 0.95,
+      "ndcg_at_k": 0.83636031859,
+      "per_query": [
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.709809741397,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "access-reset-password"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.496639259688,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 0.5
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.982842227907,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "billing-invoice-copy"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.578764111009,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 0.5
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-rollback"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.946767676127,
+          "recall_at_k": 0.666666666667,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-health-check"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.798484858099,
+          "recall_at_k": 0.666666666667,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-rollback",
+                "deploy-staged-release"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.745252534226,
+          "recall_at_k": 0.333333333333,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "incident-severity"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.982842227907,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "incident-postmortem"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "backup-restore"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "backup-schedule"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "security-suspicious-login"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "access-mfa-recovery",
+                "access-reset-password"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.745252534226,
+          "recall_at_k": 0.333333333333,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.709809741397,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "security-api-token"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "incident-customer-update"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "billing-tax-invoice",
+                "billing-invoice-copy",
+                "billing-card-update"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "incident-page-escalation",
+                "incident-customer-update",
+                "incident-postmortem"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "security-data-export",
+                "backup-schedule",
+                "deploy-staged-release"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "incident-page-escalation",
+                "incident-postmortem",
+                "billing-invoice-copy"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        }
+      ]
+    },
+    "overlap": {
+      "empty_result_rate": 0.0,
+      "false_positive_count": 4,
+      "macro_recall_at_k": 0.65,
+      "mrr_at_k": 0.925,
+      "ndcg_at_k": 0.779824825411,
+      "per_query": [
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.709809741397,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "access-reset-password"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "billing-tax-invoice"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.578764111009,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 0.5
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 1.0,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "billing-invoice-copy"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.578764111009,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 0.5
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-rollback"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.904949505846,
+          "recall_at_k": 0.666666666667,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-health-check"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.523434321641,
+          "recall_at_k": 0.666666666667,
+          "reciprocal_rank_at_k": 0.5
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "deploy-rollback",
+                "deploy-staged-release"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.745252534226,
+          "recall_at_k": 0.333333333333,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.955830589346,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "incident-page-escalation"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "incident-postmortem"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "backup-restore"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "backup-schedule"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "security-suspicious-login"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.917319412713,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "access-mfa-recovery",
+                "access-reset-password"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.745252534226,
+          "recall_at_k": 0.333333333333,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "security-data-export"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.131045630388,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [
+            {
+              "code": "missed_relevant",
+              "missing_ids": [
+                "security-api-token"
+              ]
+            }
+          ],
+          "ndcg_at_k": 0.787154602991,
+          "recall_at_k": 0.5,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.709809741397,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": true,
+          "failures": [],
+          "ndcg_at_k": 0.982842227907,
+          "recall_at_k": 1.0,
+          "reciprocal_rank_at_k": 1.0
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "billing-tax-invoice",
+                "billing-invoice-copy",
+                "billing-card-update"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "incident-page-escalation",
+                "incident-customer-update",
+                "incident-postmortem"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "backup-schedule",
+                "deploy-health-check",
+                "backup-restore"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        },
+        {
+          "answerable": false,
+          "failures": [
+            {
+              "code": "unanswerable_returned_hits",
+              "retrieved_ids": [
+                "billing-card-update",
+                "billing-invoice-copy",
+                "billing-refund-status"
+              ]
+            }
+          ],
+          "ndcg_at_k": null,
+          "recall_at_k": null,
+          "reciprocal_rank_at_k": null
+        }
+      ]
+    }
+  },
+  "queries": [
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.709809741397,
+        "ranking": [
+          {
+            "id": "access-account-lockout",
+            "score": 8.103678102936996
+          },
+          {
+            "id": "access-reset-password",
+            "score": 6.601236941962733
+          },
+          {
+            "id": "security-suspicious-login",
+            "score": 4.491004731823853
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q01",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.709809741397,
+        "ranking": [
+          {
+            "id": "access-account-lockout",
+            "score": 5.0
+          },
+          {
+            "id": "access-reset-password",
+            "score": 3.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 3.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "I can't remember my password. How do I get back into my HarborDesk account?",
+      "relevant": {
+        "access-account-lockout": 1,
+        "access-reset-password": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 1.0,
+        "ranking": [
+          {
+            "id": "access-mfa-recovery",
+            "score": 8.460337342255231
+          },
+          {
+            "id": "security-suspicious-login",
+            "score": 3.8602213442646676
+          },
+          {
+            "id": "security-api-token",
+            "score": 3.3805209370982476
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q02",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 1.0,
+        "ranking": [
+          {
+            "id": "access-mfa-recovery",
+            "score": 7.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 6.0
+          },
+          {
+            "id": "incident-severity",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "I changed phones and no longer have my authenticator app. What is the safe way to sign in?",
+      "relevant": {
+        "access-mfa-recovery": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "access-reset-password"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.496639259688,
+        "ranking": [
+          {
+            "id": "security-suspicious-login",
+            "score": 7.922861899973128
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 7.077381304971835
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 4.642152127709062
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 0.5
+      },
+      "id": "q03",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "access-reset-password"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "access-account-lockout",
+            "score": 7.0
+          },
+          {
+            "id": "security-suspicious-login",
+            "score": 7.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "What should support do when a user is locked out after too many bad login attempts?",
+      "relevant": {
+        "access-account-lockout": 3,
+        "access-reset-password": 2
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.982842227907,
+        "ranking": [
+          {
+            "id": "billing-invoice-copy",
+            "score": 13.017870574615275
+          },
+          {
+            "id": "billing-card-update",
+            "score": 10.130589262851599
+          },
+          {
+            "id": "billing-tax-invoice",
+            "score": 4.359909547306347
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q04",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "billing-tax-invoice"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.578764111009,
+        "ranking": [
+          {
+            "id": "billing-card-update",
+            "score": 7.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 7.0
+          },
+          {
+            "id": "security-data-export",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 0.5
+      },
+      "query": "Where can our billing owner download a receipt for last month's charge?",
+      "relevant": {
+        "billing-invoice-copy": 3,
+        "billing-tax-invoice": 1
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 1.0,
+        "ranking": [
+          {
+            "id": "billing-card-update",
+            "score": 9.016898019992247
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 4.1823646245989465
+          },
+          {
+            "id": "security-api-token",
+            "score": 3.966955110172215
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q05",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 1.0,
+        "ranking": [
+          {
+            "id": "billing-card-update",
+            "score": 5.0
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 5.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "If I replace the card on file, when does the subscription start using it?",
+      "relevant": {
+        "billing-card-update": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "billing-invoice-copy"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.578764111009,
+        "ranking": [
+          {
+            "id": "access-reset-password",
+            "score": 8.400079675498194
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 6.764537106219529
+          },
+          {
+            "id": "security-api-token",
+            "score": 3.9226554891313663
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 0.5
+      },
+      "id": "q06",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "billing-invoice-copy"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.578764111009,
+        "ranking": [
+          {
+            "id": "access-reset-password",
+            "score": 5.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 5.0
+          },
+          {
+            "id": "security-api-token",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 0.5
+      },
+      "query": "A refund was approved. How do we tell whether the money has been sent?",
+      "relevant": {
+        "billing-invoice-copy": 1,
+        "billing-refund-status": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-rollback"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.946767676127,
+        "ranking": [
+          {
+            "id": "deploy-staged-release",
+            "score": 9.09044781030295
+          },
+          {
+            "id": "deploy-health-check",
+            "score": 6.592697310946839
+          },
+          {
+            "id": "deploy-env-config",
+            "score": 6.044485875984171
+          }
+        ],
+        "recall_at_k": 0.666666666667,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q07",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-rollback"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.904949505846,
+        "ranking": [
+          {
+            "id": "deploy-staged-release",
+            "score": 6.0
+          },
+          {
+            "id": "deploy-env-config",
+            "score": 5.0
+          },
+          {
+            "id": "deploy-health-check",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 0.666666666667,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "How should we roll a new version out to production without exposing every region at once?",
+      "relevant": {
+        "deploy-health-check": 2,
+        "deploy-rollback": 1,
+        "deploy-staged-release": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-health-check"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.798484858099,
+        "ranking": [
+          {
+            "id": "deploy-rollback",
+            "score": 5.918583597297385
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 4.682483904258266
+          },
+          {
+            "id": "deploy-staged-release",
+            "score": 4.47485892570851
+          }
+        ],
+        "recall_at_k": 0.666666666667,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q08",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-health-check"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.523434321641,
+        "ranking": [
+          {
+            "id": "deploy-env-config",
+            "score": 4.0
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 4.0
+          },
+          {
+            "id": "deploy-staged-release",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": 0.666666666667,
+        "reciprocal_rank_at_k": 0.5
+      },
+      "query": "The latest release raised errors. How do we return to the previous working build?",
+      "relevant": {
+        "deploy-health-check": 2,
+        "deploy-rollback": 3,
+        "deploy-staged-release": 1
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-rollback",
+              "deploy-staged-release"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.745252534226,
+        "ranking": [
+          {
+            "id": "deploy-health-check",
+            "score": 10.923567855117485
+          },
+          {
+            "id": "security-suspicious-login",
+            "score": 4.429989757288305
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 3.358161149560791
+          }
+        ],
+        "recall_at_k": 0.333333333333,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q09",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "deploy-rollback",
+              "deploy-staged-release"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.745252534226,
+        "ranking": [
+          {
+            "id": "deploy-health-check",
+            "score": 7.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 4.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": 0.333333333333,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "What should I check after deploy besides whether the load balancer is green?",
+      "relevant": {
+        "deploy-health-check": 3,
+        "deploy-rollback": 1,
+        "deploy-staged-release": 2
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "incident-severity"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 14.183004749278972
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 7.734008831840455
+          },
+          {
+            "id": "security-suspicious-login",
+            "score": 7.123806086916897
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q10",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.955830589346,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 9.0
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 7.0
+          },
+          {
+            "id": "incident-severity",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "When paging the incident commander, what details belong in the alert and which route should I use?",
+      "relevant": {
+        "incident-page-escalation": 3,
+        "incident-severity": 2
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.982842227907,
+        "ranking": [
+          {
+            "id": "incident-severity",
+            "score": 17.408526113452133
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 8.718353494807033
+          },
+          {
+            "id": "incident-page-escalation",
+            "score": 6.272463103295155
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q11",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "incident-page-escalation"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "incident-severity",
+            "score": 9.0
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 5.0
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "How do I distinguish a regional major feature failure from a broad outage when setting incident level?",
+      "relevant": {
+        "incident-page-escalation": 1,
+        "incident-severity": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "incident-customer-update",
+            "score": 13.347531346627813
+          },
+          {
+            "id": "incident-page-escalation",
+            "score": 7.444502206584506
+          },
+          {
+            "id": "incident-severity",
+            "score": 4.309678401619455
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q12",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "incident-customer-update",
+            "score": 9.0
+          },
+          {
+            "id": "incident-page-escalation",
+            "score": 6.0
+          },
+          {
+            "id": "incident-severity",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "What belongs in a customer-facing status update while an outage is still being investigated?",
+      "relevant": {
+        "incident-customer-update": 3,
+        "incident-postmortem": 1
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "backup-restore"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "backup-schedule",
+            "score": 6.06991629398762
+          },
+          {
+            "id": "deploy-env-config",
+            "score": 5.8611725658709135
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 3.3912043435524897
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q13",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "backup-restore"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "backup-schedule",
+            "score": 4.0
+          },
+          {
+            "id": "deploy-env-config",
+            "score": 4.0
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 3.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "How often are production database snapshots made and how long are they kept?",
+      "relevant": {
+        "backup-restore": 1,
+        "backup-schedule": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "backup-schedule"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "backup-restore",
+            "score": 4.627077236399689
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 4.567926361272261
+          },
+          {
+            "id": "incident-page-escalation",
+            "score": 4.2988990922328405
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q14",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "backup-schedule"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "backup-restore",
+            "score": 5.0
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 5.0
+          },
+          {
+            "id": "security-data-export",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "What approvals and verification steps are needed before bringing a backed-up workspace back?",
+      "relevant": {
+        "backup-restore": 3,
+        "backup-schedule": 2
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "security-suspicious-login"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "security-api-token",
+            "score": 13.371253645331691
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 6.327175230128165
+          },
+          {
+            "id": "access-mfa-recovery",
+            "score": 5.647490348778358
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q15",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "security-suspicious-login"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "security-api-token",
+            "score": 9.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 6.0
+          },
+          {
+            "id": "deploy-rollback",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "An integration credential may have leaked. How do I replace the API key and invalidate the old one?",
+      "relevant": {
+        "security-api-token": 3,
+        "security-suspicious-login": 1
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "access-mfa-recovery",
+              "access-reset-password"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.745252534226,
+        "ranking": [
+          {
+            "id": "security-suspicious-login",
+            "score": 11.786363557361817
+          },
+          {
+            "id": "billing-card-update",
+            "score": 4.499988117126276
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 3.9820437150953394
+          }
+        ],
+        "recall_at_k": 0.333333333333,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q16",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "access-mfa-recovery",
+              "access-reset-password"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.745252534226,
+        "ranking": [
+          {
+            "id": "security-suspicious-login",
+            "score": 6.0
+          },
+          {
+            "id": "billing-card-update",
+            "score": 4.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 3.0
+          }
+        ],
+        "recall_at_k": 0.333333333333,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "Someone saw a login they don't recognize. What account security steps should happen first?",
+      "relevant": {
+        "access-mfa-recovery": 2,
+        "access-reset-password": 1,
+        "security-suspicious-login": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.709809741397,
+        "ranking": [
+          {
+            "id": "billing-invoice-copy",
+            "score": 5.933645644076638
+          },
+          {
+            "id": "security-data-export",
+            "score": 5.605028617305575
+          },
+          {
+            "id": "backup-restore",
+            "score": 3.566442231890259
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q17",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "security-data-export"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.131045630388,
+        "ranking": [
+          {
+            "id": "billing-invoice-copy",
+            "score": 7.0
+          },
+          {
+            "id": "backup-schedule",
+            "score": 6.0
+          },
+          {
+            "id": "billing-card-update",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "Who can approve a workspace data download, and how is the file shared securely?",
+      "relevant": {
+        "billing-invoice-copy": 1,
+        "security-data-export": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "security-api-token"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "deploy-env-config",
+            "score": 18.40444332125508
+          },
+          {
+            "id": "backup-restore",
+            "score": 4.417946613111969
+          },
+          {
+            "id": "deploy-staged-release",
+            "score": 3.543700240662666
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q18",
+      "overlap": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "security-api-token"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.787154602991,
+        "ranking": [
+          {
+            "id": "deploy-env-config",
+            "score": 6.0
+          },
+          {
+            "id": "backup-restore",
+            "score": 2.0
+          },
+          {
+            "id": "backup-schedule",
+            "score": 2.0
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "Where should production credentials live when setting environment-specific deployment values?",
+      "relevant": {
+        "deploy-env-config": 3,
+        "security-api-token": 2
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [
+          {
+            "code": "missed_relevant",
+            "missing_ids": [
+              "incident-customer-update"
+            ]
+          }
+        ],
+        "ndcg_at_k": 0.917319412713,
+        "ranking": [
+          {
+            "id": "incident-postmortem",
+            "score": 11.011665044957464
+          },
+          {
+            "id": "incident-page-escalation",
+            "score": 7.352979377144168
+          },
+          {
+            "id": "deploy-health-check",
+            "score": 5.676316509315004
+          }
+        ],
+        "recall_at_k": 0.5,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q19",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.709809741397,
+        "ranking": [
+          {
+            "id": "incident-customer-update",
+            "score": 7.0
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 7.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 6.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "How do we run a blameless review after an incident and make sure follow-up work is tracked?",
+      "relevant": {
+        "incident-customer-update": 1,
+        "incident-postmortem": 3
+      }
+    },
+    {
+      "answerable": true,
+      "bm25": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 1.0,
+        "ranking": [
+          {
+            "id": "access-mfa-recovery",
+            "score": 11.162301074858345
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 5.535665771298298
+          },
+          {
+            "id": "billing-card-update",
+            "score": 4.78887450762108
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "id": "q20",
+      "overlap": {
+        "answerable": true,
+        "failures": [],
+        "ndcg_at_k": 0.982842227907,
+        "ranking": [
+          {
+            "id": "access-mfa-recovery",
+            "score": 8.0
+          },
+          {
+            "id": "billing-card-update",
+            "score": 6.0
+          },
+          {
+            "id": "access-account-lockout",
+            "score": 5.0
+          }
+        ],
+        "recall_at_k": 1.0,
+        "reciprocal_rank_at_k": 1.0
+      },
+      "query": "How can a person regain access if they lost the phone that generates their second-factor codes?",
+      "relevant": {
+        "access-account-lockout": 1,
+        "access-mfa-recovery": 3
+      }
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-tax-invoice",
+              "billing-invoice-copy",
+              "billing-card-update"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-tax-invoice",
+            "score": 18.119844848814434
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 11.348258678875146
+          },
+          {
+            "id": "billing-card-update",
+            "score": 8.285983521735503
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q21",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-tax-invoice",
+              "billing-invoice-copy",
+              "billing-card-update"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-tax-invoice",
+            "score": 10.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 9.0
+          },
+          {
+            "id": "billing-card-update",
+            "score": 7.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "How can Finance add a new VAT registration number to an invoice that was already issued?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-customer-update",
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 12.501700904475326
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 7.258268613710323
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 6.362974240139013
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q22",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-customer-update",
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 9.0
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 8.0
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 8.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "What is the direct emergency phone number for a customer to reach the on-call during an incident?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "security-data-export",
+              "backup-schedule",
+              "deploy-staged-release"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "security-data-export",
+            "score": 7.274187049626515
+          },
+          {
+            "id": "backup-schedule",
+            "score": 6.94189493084336
+          },
+          {
+            "id": "deploy-staged-release",
+            "score": 5.413685358387806
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q23",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "backup-schedule",
+              "deploy-health-check",
+              "backup-restore"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "backup-schedule",
+            "score": 5.0
+          },
+          {
+            "id": "deploy-health-check",
+            "score": 5.0
+          },
+          {
+            "id": "backup-restore",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "Which backup archive is mounted in the production shadow cluster for the Canada region?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-postmortem",
+              "billing-invoice-copy"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 1.4704776694641688
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 1.4652641241456832
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 1.1018768842273656
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q24",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-card-update",
+              "billing-invoice-copy",
+              "billing-refund-status"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-card-update",
+            "score": 2.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 2.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 2.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "Who waters the lobby fern on Fridays?",
+      "relevant": {}
+    }
+  ],
+  "ranking_policy": {
+    "baseline": "count of distinct query tokens present in document",
+    "bm25": {
+      "b": 0.75,
+      "idf": "log(1+(N-df+0.5)/(df+0.5))",
+      "k1": 1.2,
+      "score": "sum idf*tf*(k1+1)/(tf+k1*(1-b+b*dl/avgdl))"
+    },
+    "document_text": "title + single space + body",
+    "query_terms": "unique",
+    "ties": "document id ascending",
+    "title_boost": 1.0,
+    "tokenization": "NFKC + casefold + [^\\W_]+",
+    "zero_scores": "omitted"
+  },
+  "unanswerable_count": 4,
+  "unanswerables": [
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-tax-invoice",
+              "billing-invoice-copy",
+              "billing-card-update"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-tax-invoice",
+            "score": 18.119844848814434
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 11.348258678875146
+          },
+          {
+            "id": "billing-card-update",
+            "score": 8.285983521735503
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q21",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-tax-invoice",
+              "billing-invoice-copy",
+              "billing-card-update"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-tax-invoice",
+            "score": 10.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 9.0
+          },
+          {
+            "id": "billing-card-update",
+            "score": 7.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "How can Finance add a new VAT registration number to an invoice that was already issued?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-customer-update",
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 12.501700904475326
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 7.258268613710323
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 6.362974240139013
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q22",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-customer-update",
+              "incident-postmortem"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 9.0
+          },
+          {
+            "id": "incident-customer-update",
+            "score": 8.0
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 8.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "What is the direct emergency phone number for a customer to reach the on-call during an incident?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "security-data-export",
+              "backup-schedule",
+              "deploy-staged-release"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "security-data-export",
+            "score": 7.274187049626515
+          },
+          {
+            "id": "backup-schedule",
+            "score": 6.94189493084336
+          },
+          {
+            "id": "deploy-staged-release",
+            "score": 5.413685358387806
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q23",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "backup-schedule",
+              "deploy-health-check",
+              "backup-restore"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "backup-schedule",
+            "score": 5.0
+          },
+          {
+            "id": "deploy-health-check",
+            "score": 5.0
+          },
+          {
+            "id": "backup-restore",
+            "score": 4.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "Which backup archive is mounted in the production shadow cluster for the Canada region?",
+      "relevant": {}
+    },
+    {
+      "answerable": false,
+      "bm25": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "incident-page-escalation",
+              "incident-postmortem",
+              "billing-invoice-copy"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "incident-page-escalation",
+            "score": 1.4704776694641688
+          },
+          {
+            "id": "incident-postmortem",
+            "score": 1.4652641241456832
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 1.1018768842273656
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "id": "q24",
+      "overlap": {
+        "answerable": false,
+        "failures": [
+          {
+            "code": "unanswerable_returned_hits",
+            "retrieved_ids": [
+              "billing-card-update",
+              "billing-invoice-copy",
+              "billing-refund-status"
+            ]
+          }
+        ],
+        "ndcg_at_k": null,
+        "ranking": [
+          {
+            "id": "billing-card-update",
+            "score": 2.0
+          },
+          {
+            "id": "billing-invoice-copy",
+            "score": 2.0
+          },
+          {
+            "id": "billing-refund-status",
+            "score": 2.0
+          }
+        ],
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null
+      },
+      "query": "Who waters the lobby fern on Fridays?",
+      "relevant": {}
+    }
+  ]
+}

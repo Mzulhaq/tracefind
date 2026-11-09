@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "query": "I can't remember my password. How do I get back into my HarborDesk account?",
+    "relevant": {"access-reset-password": 3, "access-account-lockout": 1}
+  },
+  {
+    "id": "q02",
+    "query": "I changed phones and no longer have my authenticator app. What is the safe way to sign in?",
+    "relevant": {"access-mfa-recovery": 3}
+  },
+  {
+    "id": "q03",
+    "query": "What should support do when a user is locked out after too many bad login attempts?",
+    "relevant": {"access-account-lockout": 3, "access-reset-password": 2}
+  },
+  {
+    "id": "q04",
+    "query": "Where can our billing owner download a receipt for last month's charge?",
+    "relevant": {"billing-invoice-copy": 3, "billing-tax-invoice": 1}
+  },
+  {
+    "id": "q05",
+    "query": "If I replace the card on file, when does the subscription start using it?",
+    "relevant": {"billing-card-update": 3}
+  },
+  {
+    "id": "q06",
+    "query": "A refund was approved. How do we tell whether the money has been sent?",
+    "relevant": {"billing-refund-status": 3, "billing-invoice-copy": 1}
+  },
+  {
+    "id": "q07",
+    "query": "How should we roll a new version out to production without exposing every region at once?",
+    "relevant": {"deploy-staged-release": 3, "deploy-health-check": 2, "deploy-rollback": 1}
+  },
+  {
+    "id": "q08",
+    "query": "The latest release raised errors. How do we return to the previous working build?",
+    "relevant": {"deploy-rollback": 3, "deploy-health-check": 2, "deploy-staged-release": 1}
+  },
+  {
+    "id": "q09",
+    "query": "What should I check after deploy besides whether the load balancer is green?",
+    "relevant": {"deploy-health-check": 3, "deploy-staged-release": 2, "deploy-rollback": 1}
+  },
+  {
+    "id": "q10",
+    "query": "When paging the incident commander, what details belong in the alert and which route should I use?",
+    "relevant": {"incident-page-escalation": 3, "incident-severity": 2}
+  },
+  {
+    "id": "q11",
+    "query": "How do I distinguish a regional major feature failure from a broad outage when setting incident level?",
+    "relevant": {"incident-severity": 3, "incident-page-escalation": 1}
+  },
+  {
+    "id": "q12",
+    "query": "What belongs in a customer-facing status update while an outage is still being investigated?",
+    "relevant": {"incident-customer-update": 3, "incident-postmortem": 1}
+  },
+  {
+    "id": "q13",
+    "query": "How often are production database snapshots made and how long are they kept?",
+    "relevant": {"backup-schedule": 3, "backup-restore": 1}
+  },
+  {
+    "id": "q14",
+    "query": "What approvals and verification steps are needed before bringing a backed-up workspace back?",
+    "relevant": {"backup-restore": 3, "backup-schedule": 2}
+  },
+  {
+    "id": "q15",
+    "query": "An integration credential may have leaked. How do I replace the API key and invalidate the old one?",
+    "relevant": {"security-api-token": 3, "security-suspicious-login": 1}
+  },
+  {
+    "id": "q16",
+    "query": "Someone saw a login they don't recognize. What account security steps should happen first?",
+    "relevant": {"security-suspicious-login": 3, "access-mfa-recovery": 2, "access-reset-password": 1}
+  },
+  {
+    "id": "q17",
+    "query": "Who can approve a workspace data download, and how is the file shared securely?",
+    "relevant": {"security-data-export": 3, "billing-invoice-copy": 1}
+  },
+  {
+    "id": "q18",
+    "query": "Where should production credentials live when setting environment-specific deployment values?",
+    "relevant": {"deploy-env-config": 3, "security-api-token": 2}
+  },
+  {
+    "id": "q19",
+    "query": "How do we run a blameless review after an incident and make sure follow-up work is tracked?",
+    "relevant": {"incident-postmortem": 3, "incident-customer-update": 1}
+  },
+  {
+    "id": "q20",
+    "query": "How can a person regain access if they lost the phone that generates their second-factor codes?",
+    "relevant": {"access-mfa-recovery": 3, "access-account-lockout": 1}
+  },
+  {
+    "id": "q21",
+    "query": "How can Finance add a new VAT registration number to an invoice that was already issued?",
+    "relevant": {}
+  },
+  {
+    "id": "q22",
+    "query": "What is the direct emergency phone number for a customer to reach the on-call during an incident?",
+    "relevant": {}
+  },
+  {
+    "id": "q23",
+    "query": "Which backup archive is mounted in the production shadow cluster for the Canada region?",
+    "relevant": {}
+  },
+  {
+    "id": "q24",
+    "query": "Who waters the lobby fern on Fridays?",
+    "relevant": {}
+  }
+]

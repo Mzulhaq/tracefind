@@ -1,0 +1,5 @@
+include requirements.lock requirements-runtime.lock Dockerfile
+recursive-include data *.json *.md
+recursive-include scripts *.py
+recursive-include docs *.md *.json
+recursive-include tests *.py

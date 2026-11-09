@@ -1,0 +1,122 @@
+[
+  {
+    "id": "access-account-lockout",
+    "title": "Unlocking an account after repeated sign-in failures",
+    "body": "HarborDesk staff may lock an account after six unsuccessful password attempts within fifteen minutes. The affected person should wait ten minutes before trying again, then use the password reset flow if the password is uncertain. A support agent can confirm the lock reason in the identity console but must not ask the person to disclose a password or one-time code. If the lock remains after the wait and a successful reset, escalate to Identity Operations with the account ID and approximate failure time. Do not disable multifactor authentication as a shortcut.",
+    "source": "handbook://access/account-lockout"
+  },
+  {
+    "id": "access-mfa-recovery",
+    "title": "Recovering access when an authenticator is unavailable",
+    "body": "When a staff member replaces or loses a phone, they can sign in with one unused recovery code from the set issued during multifactor enrollment. Each code works once. After access is restored, open Security Settings, remove the old authenticator, enroll the replacement device, and save a newly generated recovery-code set in the approved password manager. Support cannot read or regenerate the old codes. If no recovery code is available, Identity Operations verifies identity through the manager-approved process before resetting enrollment. Never send recovery codes through chat or email.",
+    "source": "handbook://access/mfa-recovery"
+  },
+  {
+    "id": "access-reset-password",
+    "title": "Resetting a forgotten HarborDesk password",
+    "body": "Open the HarborDesk sign-in page and choose Forgot password. Enter the work email address associated with the account, then follow the single-use link sent to that mailbox. The link expires after thirty minutes; request another if it has expired. Choose a new password that meets the current identity policy and has not been used for the previous ten passwords. Support staff must not request or set a user's password. If the email never arrives, check junk mail and account status, then route the case to Identity Operations with the user's account ID.",
+    "source": "handbook://access/reset-password"
+  },
+  {
+    "id": "billing-card-update",
+    "title": "Changing the payment card on a subscription",
+    "body": "A billing owner can change a subscription card from Workspace Settings, Billing, Payment method. The new card is verified with a small authorization that should disappear according to the card issuer's normal timing. Changes apply to the next invoice and do not automatically retry a payment that already failed. For a failed charge, update the card first, then use Retry payment from the invoice page. Support agents must not collect full card numbers or security codes. If the card form reports a processor error, attach the displayed reference ID to the billing case.",
+    "source": "handbook://billing/update-payment-card"
+  },
+  {
+    "id": "billing-invoice-copy",
+    "title": "Downloading a copy of a past invoice",
+    "body": "Workspace billing owners can retrieve issued invoices from Settings, Billing, Invoice history. Select the invoice period and choose Download PDF. The list includes only finalized invoices; a draft estimate is available separately under Upcoming charges and is not a receipt. If an invoice is missing, confirm the workspace and billing-owner account before asking Finance Operations to investigate. Include the workspace ID and invoice month in the request. Do not email invoices to an address that is not already authorized on the workspace billing profile.",
+    "source": "handbook://billing/invoice-copy"
+  },
+  {
+    "id": "billing-refund-status",
+    "title": "Checking the status of an approved refund",
+    "body": "After Finance marks a refund as approved, HarborDesk records the refund reference and submission date on the original invoice. The payment processor sends funds back to the original payment method; posting time varies by card issuer and is outside HarborDesk's control. Support should confirm that the refund is submitted, share its reference, and explain that the issuer may need several business days. If the reference is absent after two business days, open a Finance Operations ticket with invoice ID and workspace ID. Do not promise an exact bank posting date.",
+    "source": "handbook://billing/refund-status"
+  },
+  {
+    "id": "billing-tax-invoice",
+    "title": "Correcting a company name on an invoice",
+    "body": "Billing owners can edit the legal company name and billing address under Workspace Settings before the next invoice is finalized. These profile edits affect future invoices only; they do not rewrite issued accounting records. To request a correction to an already issued invoice, submit the invoice ID, current company name, and requested legal name to Finance Operations. Finance reviews the request and determines whether a corrected document can be issued under local policy. Support agents must not alter invoice PDFs or add tax registration details directly to an issued record.",
+    "source": "handbook://billing/invoice-correction"
+  },
+  {
+    "id": "deploy-env-config",
+    "title": "Managing environment-specific application settings",
+    "body": "HarborDesk deployments read environment-specific settings from the release configuration attached to each environment. Promote a tested setting through the change request rather than editing production values from a developer workstation. Secret values belong in the approved secret store and are injected at process start; never place credentials in source control, build logs, or ticket comments. The configuration owner reviews changes that affect database endpoints or authentication. After a change, compare the rendered configuration version in staging and production, excluding secret values, and record the change request ID in the release notes.",
+    "source": "handbook://deployments/environment-config"
+  },
+  {
+    "id": "deploy-health-check",
+    "title": "Verifying service health after a release",
+    "body": "After deploying a HarborDesk release, check the version endpoint and the service readiness dashboard for each region. Readiness requires the API process to start, its database connection to succeed, and the queue consumer to report a current heartbeat. A green load balancer alone is not enough if background work is stalled. Compare error rate and request latency with the prior thirty-minute baseline for at least ten minutes. If readiness remains degraded, pause further rollout and follow the rollback runbook. Record the release ID, region, and observed signals in the deployment channel.",
+    "source": "handbook://deployments/health-check"
+  },
+  {
+    "id": "deploy-rollback",
+    "title": "Rolling back a release safely",
+    "body": "The release manager may start a rollback when a new version causes elevated errors or fails readiness checks. First pause the rollout and record affected regions and release ID. Redeploy the last known-good application artifact through the normal pipeline; do not patch running containers by hand. If the release included a database migration, check the migration note before reverting because some changes are forward-only. Verify API readiness, queue processing, and key customer flows after the rollback. Keep the incident open until metrics stabilize and the on-call lead approves closure.",
+    "source": "handbook://deployments/rollback"
+  },
+  {
+    "id": "deploy-staged-release",
+    "title": "Releasing a service through staged rollout",
+    "body": "HarborDesk application releases begin in the internal test environment, move to staging, and then roll through production regions in the order listed by the release plan. The release owner confirms the build identifier, migration notes, and support notice before starting. Observe readiness and error signals after each region; wait at least ten minutes before promoting to the next region. Pause the rollout if health checks fail or error rate rises above the agreed release threshold. A staged rollout limits the number of customers exposed while the team investigates. Record each promotion in the change log.",
+    "source": "handbook://deployments/staged-rollout"
+  },
+  {
+    "id": "incident-customer-update",
+    "title": "Writing customer updates during an incident",
+    "body": "The incident communications lead posts a customer update when the status page changes or at the cadence set by the incident commander. State the affected service, known customer impact, mitigation in progress, and time of the next update. Separate confirmed facts from investigation hypotheses and avoid naming individual customers. Do not publish internal hostnames, security details, or unverified recovery estimates. If impact is still being assessed, say so plainly. After service is restored, post a resolution notice and link to the public summary when it is approved. Keep updates consistent across status page and support macros.",
+    "source": "handbook://incidents/customer-updates"
+  },
+  {
+    "id": "incident-postmortem",
+    "title": "Preparing a blameless incident review",
+    "body": "Within five business days of closing a high-severity incident, the incident owner schedules a review with the teams involved. Build a timeline from logs and responder notes, identify contributing conditions, and distinguish detection gaps from recovery decisions. The review focuses on how systems and processes behaved, not on assigning personal blame. Each action item needs an owner, a due date, and a way to verify completion. Link the incident ID, customer communication, and relevant change records. Share the draft with participants for factual corrections before publishing it in the reliability library.",
+    "source": "handbook://incidents/postmortem-review"
+  },
+  {
+    "id": "incident-page-escalation",
+    "title": "Paging the incident response team",
+    "body": "Page the on-call incident commander for a sustained customer-facing outage, suspected data exposure, or a failure affecting multiple regions. Include the service name, start time, observed customer impact, dashboards checked, and actions already attempted. Use the incident paging system rather than a direct personal message so that escalation and acknowledgement are recorded. If no acknowledgement arrives within five minutes, use the secondary on-call route. The commander assigns an incident channel and response roles. Avoid speculation in the page; attach measurements and clearly mark uncertain details for follow-up.",
+    "source": "handbook://incidents/page-escalation"
+  },
+  {
+    "id": "incident-severity",
+    "title": "Classifying service incident severity",
+    "body": "Use the highest verified customer impact to assign incident severity. SEV-1 means a broad outage, material data loss, or active security exposure requiring immediate coordinated response. SEV-2 covers a major feature failure or regional degradation with a workaround. SEV-3 covers limited impact with service mostly available and no urgent safety or security concern. The incident commander may raise or lower severity as evidence changes and records the reason in the incident log. Do not lower severity solely because traffic is low or a workaround exists for only a subset of customers.",
+    "source": "handbook://incidents/severity"
+  },
+  {
+    "id": "backup-restore",
+    "title": "Restoring a workspace from backup",
+    "body": "A restore request requires approval from the workspace owner and the data operations lead. Confirm the workspace ID, requested recovery point, and expected data-loss window before scheduling. Restore into an isolated recovery environment first, then validate record counts and application access with the requester. Never overwrite the live workspace during initial verification. Once both approvers accept the checks, schedule the cutover and preserve the pre-restore snapshot for the retention period. Record the backup identifier, timestamps, validation outcome, and approvers in the recovery ticket. Escalate any mismatch before exposing restored data to users.",
+    "source": "handbook://backups/workspace-restore"
+  },
+  {
+    "id": "backup-schedule",
+    "title": "Backup schedule and retention windows",
+    "body": "Production workspace databases receive an encrypted snapshot every six hours and a daily full backup. Snapshots remain available for fourteen days; monthly archives are retained for six months under the current data schedule. The backup monitor records completion time, size, and checksum and pages Data Operations when a scheduled run is late by more than thirty minutes. A green job status confirms creation but does not prove that restoration works, so teams also perform a quarterly recovery exercise. Never copy backup files to personal storage or attach them to support tickets.",
+    "source": "handbook://backups/schedule-retention"
+  },
+  {
+    "id": "security-api-token",
+    "title": "Creating and rotating an API token",
+    "body": "Workspace administrators create an API token from Developer Settings and assign only the scopes required by the integration. The token is shown once; save it directly into the approved secret manager and do not paste it into source control, chat, or issue trackers. Set an owner and review date when creating each token. To rotate, create a replacement, update the integration, verify successful requests, and then revoke the old token. If a token may have been exposed, revoke it immediately and notify Security Operations with the token ID and suspected exposure time, never the token value.",
+    "source": "handbook://security/api-token-rotation"
+  },
+  {
+    "id": "security-data-export",
+    "title": "Approving an export of workspace data",
+    "body": "A workspace data export must be requested by an authorized owner and approved by the privacy contact for that workspace. Confirm the requested date range, data categories, and business purpose before generating the archive. Use the secure export portal, which expires the download link after twenty-four hours and records access. Do not send an archive as an email attachment or widen the export to include unrelated workspaces. If the requester asks for deletion or a regulatory copy, route the request through Privacy Operations because separate verification and retention rules may apply.",
+    "source": "handbook://security/data-export"
+  },
+  {
+    "id": "security-suspicious-login",
+    "title": "Responding to a suspicious sign-in alert",
+    "body": "When a user reports a sign-in they do not recognize, ask them to open Security Settings and review active sessions. Revoke sessions they do not recognize, change the account password from a trusted device, and confirm multifactor authentication is enabled. Support staff should not ask for passwords or authentication codes. Preserve the alert timestamp, approximate location, and session identifier in the security case. If the user sees unauthorized workspace changes or cannot secure the account, page Security Operations immediately. Security will assess whether token revocation or customer notification is required.",
+    "source": "handbook://security/suspicious-login"
+  }
+]
